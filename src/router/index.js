@@ -21,11 +21,11 @@ export default new Router({
     //   name: 'login',
     //   component:  resolve => require(["@/components/login"], resolve)
     // },
-    {
-      path: '/advertisement',
-      name: 'advertisement',
-      component:  resolve => require(["@/view/advertisement"], resolve)
-    },
+    // {
+    //   path: '/advertisement',
+    //   name: 'advertisement',
+    //   component:  resolve => require(["@/view/advertisement"], resolve)
+    // },
     {
       path: '/',
       name: 'index',
@@ -105,11 +105,12 @@ export default new Router({
           path: '/shopstonemonthreport',
           name: 'shopstonemonthreport',
           component: resolve => require(['@/view/ReportFormsCentre/shopstonemonthreport'], resolve),
-        }, {
-          path: '/reconciliation',
-          name: 'reconciliation',
-          component: resolve => require(['@/view/reconciliation/reconciliation'], resolve),
-        }
+        },
+        // {
+        //   path: '/reconciliation',
+        //   name: 'reconciliation',
+        //   component: resolve => require(['@/view/reconciliation/reconciliation'], resolve),
+        // }
       ]
     }
   ]
