@@ -157,11 +157,11 @@ export default {
           _self.$message.error("响应时间过长，请重试");
         });
     }
-  },
-  created: function() {
-    let _self = this;
-    _self.todaypinlei();
   }
+  // created: function() {
+  //   let _self = this;
+  //   _self.todaypinlei();
+  // }
 };
 </script>
 

@@ -20,7 +20,7 @@
               <div style="width: 3.125rem;height: 3.125rem;margin-left:55px;padding: 10px 0 0 0;">
                 <img src="../../assets/hearder.png" style="width: 100%;" />
               </div>
-              <p>{{"testshop"}}</p>
+              <!--<p>{{"testshop"}}</p>-->
             </div>
             <i class="el-icon-setting"></i>
           </el-menu-item>
@@ -368,31 +368,31 @@
               <!--<el-menu-item index="nav">报表导航页</el-menu-item>-->
               <el-submenu index="7-1">
                 <template slot="title">汇总类报表</template>
-                <el-menu-item-group>
-                  <el-menu-item index="Categorysummary">品类汇总</el-menu-item>
-                </el-menu-item-group>
-                <!--<div v-bind:style="{ display: canyinTabulation }">-->
-                  <el-menu-item-group>
-                    <el-menu-item index="Salesvolumesummary">餐饮单品销量汇总</el-menu-item>
-                  </el-menu-item-group>
+                <!--<el-menu-item-group>-->
+                  <!--<el-menu-item index="Categorysummary">品类汇总</el-menu-item>-->
+                <!--</el-menu-item-group>-->
+                <!--&lt;!&ndash;<div v-bind:style="{ display: canyinTabulation }">&ndash;&gt;-->
+                  <!--<el-menu-item-group>-->
+                    <!--<el-menu-item index="Salesvolumesummary">餐饮单品销量汇总</el-menu-item>-->
+                  <!--</el-menu-item-group>-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--&lt;!&ndash;<div v-bind:style="{ display: lingshouTabulation }">&ndash;&gt;-->
+                  <!--<el-menu-item-group>-->
+                    <!--<el-menu-item index="SalesvolumesummaryRetail">零售单品销量汇总</el-menu-item>-->
+                  <!--</el-menu-item-group>-->
                 <!--</div>-->
-                <!--<div v-bind:style="{ display: lingshouTabulation }">-->
-                  <el-menu-item-group>
-                    <el-menu-item index="SalesvolumesummaryRetail">零售单品销量汇总</el-menu-item>
-                  </el-menu-item-group>
-                <!--</div>-->
-                <el-menu-item-group>
-                  <el-menu-item index="comprehensive">综合汇总</el-menu-item>
-                </el-menu-item-group>
-                <el-menu-item-group>
-                  <el-menu-item index="ReportFormsLinkFelativeMonth">月环比报表</el-menu-item>
-                </el-menu-item-group>
-                <el-menu-item-group>
-                  <el-menu-item index="ReportFormsLinkFelativeWeek">周环比报表</el-menu-item>
-                </el-menu-item-group>
-                <el-menu-item-group>
-                  <el-menu-item index="intervalDataComparisonReportD">日环比报表</el-menu-item>
-                </el-menu-item-group>
+                <!--<el-menu-item-group>-->
+                  <!--<el-menu-item index="comprehensive">综合汇总</el-menu-item>-->
+                <!--</el-menu-item-group>-->
+                <!--<el-menu-item-group>-->
+                  <!--<el-menu-item index="ReportFormsLinkFelativeMonth">月环比报表</el-menu-item>-->
+                <!--</el-menu-item-group>-->
+                <!--<el-menu-item-group>-->
+                  <!--<el-menu-item index="ReportFormsLinkFelativeWeek">周环比报表</el-menu-item>-->
+                <!--</el-menu-item-group>-->
+                <!--<el-menu-item-group>-->
+                  <!--<el-menu-item index="intervalDataComparisonReportD">日环比报表</el-menu-item>-->
+                <!--</el-menu-item-group>-->
 
                 <el-menu-item-group>
                   <el-menu-item index="DataReportDay">日汇总报表</el-menu-item>
@@ -417,11 +417,11 @@
                   <template slot="title">零售类报表</template>
                   <el-menu-item-group>
                     <el-menu-item index="theoreticalinventory_v2">库存明细报表</el-menu-item>
-                  </el-menu-item-group>
-                  <!--<el-menu-item-group v-bind:style="{ display: lingshouTabulation }">-->
-                    <el-menu-item index="BillDetailTabulationRetail">零售账单明细表</el-menu-item>
                   <!--</el-menu-item-group>-->
-                  <el-menu-item-group>
+                  <!--&lt;!&ndash;<el-menu-item-group v-bind:style="{ display: lingshouTabulation }">&ndash;&gt;-->
+                    <!--<el-menu-item index="BillDetailTabulationRetail">零售账单明细表</el-menu-item>-->
+                  <!--&lt;!&ndash;</el-menu-item-group>&ndash;&gt;-->
+                  <!--<el-menu-item-group>-->
                     <el-menu-item index="salesPerformance">销售业绩报表</el-menu-item>
                   </el-menu-item-group>
                   <el-menu-item-group>
@@ -435,12 +435,12 @@
               <!--</div>-->
 
               <!--<el-menu-item-group v-bind:style="{ display: canyinTabulation }">-->
-                <el-menu-item index="BillDetailTabulation">餐饮账单明细表</el-menu-item>
+                <!--<el-menu-item index="BillDetailTabulation">餐饮账单明细表</el-menu-item>-->
               <!--</el-menu-item-group>-->
 
-              <el-menu-item-group>
-                <el-menu-item index="OrderCouponDetail">订单优惠信息查询</el-menu-item>
-              </el-menu-item-group>
+              <!--<el-menu-item-group>-->
+                <!--<el-menu-item index="OrderCouponDetail">订单优惠信息查询</el-menu-item>-->
+              <!--</el-menu-item-group>-->
             </el-submenu>
             <!--<el-submenu index="13" v-bind:style="{ display: unpaiddisplay }">-->
               <!--<template slot="title">-->
@@ -458,13 +458,13 @@
         <el-header
           style="text-align: right; font-size: 12px;background-color: rgb(51, 51, 51);position: relative;"
         >
-          <i
-            class="el-icon-s-fold username leftclose"
-            style="margin-right: 15px"
-            @click="hidechange"
-          ></i>
-          <span class="username" @click="layout">{{username}} 退出</span>
-          <i class="el-icon-caret-bottom username" style="margin-right: 15px"></i>
+          <!--<i-->
+            <!--class="el-icon-s-fold username leftclose"-->
+            <!--style="margin-right: 15px"-->
+            <!--@click="hidechange"-->
+          <!--&gt;</i>-->
+          <!--<span class="username" @click="layout">{{username}} 退出</span>-->
+          <!--<i class="el-icon-caret-bottom username" style="margin-right: 15px"></i>-->
           <!-- <el-dropdown>
 						<span class="username" @click="layout">{{username}} 退出</span>
 						<i class="el-icon-caret-bottom username" style="margin-right: 15px"></i>
@@ -542,111 +542,111 @@ export default {
       NamingMethodChild: "商家点餐"
     };
   },
-  methods: {
-    layout() {
-      let _self = this;
-      _self.axios
-        .post(_self.ApiUrl + "/logout")
-        .then(response => {
-          if (response.data.code == "200") {
-            _self.$store.commit("SAVE_USERINFO", "");
-            _self.$store.commit("SAVE_ArrayList", "");
-            _self.$store.commit("SAVE_ShopName", "");
-            _self.$store.commit("SAVE_BillData", "");
-            _self.$store.commit("SAVE_AllPayment", "");
-            _self.$router.push("/login");
-            _self.$message({
-              type: "success",
-              message: "退出成功"
-            });
-          } else {
-            _self.$router.push("/login");
-            _self.$store.commit("SAVE_USERINFO", "");
-            _self.$store.commit("SAVE_ArrayList", "");
-            _self.$store.commit("SAVE_ShopName", "");
-            _self.$store.commit("SAVE_BillData", "");
-            _self.$store.commit("SAVE_AllPayment", "");
-            _self.$message({
-              type: "error",
-              message: "退出失败"
-            });
-          }
-        })
-        .catch(function(error) {
-          _self.$router.push("/login");
-          _self.$store.commit("SAVE_USERINFO", "");
-          _self.axios
-            .post(_self.ApiUrl + "/logout")
-            .then(response => {
-              if (response.data.code == "200") {
-                _self.$store.commit("SAVE_USERINFO", "");
-                _self.$store.commit("SAVE_ArrayList", "");
-                _self.$store.commit("SAVE_ShopName", "");
-                _self.$store.commit("SAVE_BillData", "");
-                _self.$store.commit("SAVE_AllPayment", "");
-                _self.$router.push("/login");
-              } else {
-                _self.$router.push("/login");
-                _self.$store.commit("SAVE_USERINFO", "");
-                _self.$store.commit("SAVE_ArrayList", "");
-                _self.$store.commit("SAVE_BillData", "");
-                _self.$store.commit("SAVE_ShopName", "");
-                _self.$store.commit("SAVE_AllPayment", "");
-              }
-            })
-            .catch(function(error) {
-              _self.$router.push("/login");
-              _self.$store.commit("SAVE_USERINFO", "");
-              _self.$store.commit("SAVE_ArrayList", "");
-              _self.$store.commit("SAVE_BillData", "");
-              _self.$store.commit("SAVE_ShopName", "");
-              _self.$store.commit("SAVE_AllPayment", "");
-            });
-          _self.$message.error("响应时间过长，请重试");
-        });
-    },
-    // logins() {
-    //   let _self = this;
-    //   console.log(_self.ArrayList);
-    //   if (
-    //     _self.$store.state.userinfo == "" ||
-    //     _self.$store.state.userinfo == undefined ||
-    //     _self.$store.state.userinfo == null
-    //   ) {
-    //     _self.$router.push("/login");
-    //     _self.axios
-    //       .post(_self.ApiUrl + "/logout")
-    //       .then(response => {
-    //         if (response.data.code == "200") {
-    //           _self.$store.commit("SAVE_USERINFO", "");
-    //           _self.$store.commit("SAVE_ArrayList", "");
-    //           _self.$store.commit("SAVE_ShopName", "");
-    //           _self.$router.push("/login");
-    //         } else {
-    //           _self.$router.push("/login");
-    //           _self.$store.commit("SAVE_USERINFO", "");
-    //           _self.$store.commit("SAVE_ArrayList", "");
-    //           _self.$store.commit("SAVE_ShopName", "");
-    //         }
-    //       })
-    //       .catch(function(error) {
-    //         _self.$router.push("/login");
-    //         _self.$store.commit("SAVE_USERINFO", "");
-    //         _self.$store.commit("SAVE_ArrayList", "");
-    //         _self.$store.commit("SAVE_ShopName", "");
-    //       });
-    //   }
-    // },
-    // 隐藏开关
-    hidechange() {
-      let _self = this;
-      _self.isShows = !_self.isShows;
-    }
-  },
-  async mounted() {
-    this.logins();
-    await this.gettodaylist();
-  }
+  // methods: {
+  //   layout() {
+  //     let _self = this;
+  //     _self.axios
+  //       .post(_self.ApiUrl + "/logout")
+  //       .then(response => {
+  //         if (response.data.code == "200") {
+  //           _self.$store.commit("SAVE_USERINFO", "");
+  //           _self.$store.commit("SAVE_ArrayList", "");
+  //           _self.$store.commit("SAVE_ShopName", "");
+  //           _self.$store.commit("SAVE_BillData", "");
+  //           _self.$store.commit("SAVE_AllPayment", "");
+  //           _self.$router.push("/login");
+  //           _self.$message({
+  //             type: "success",
+  //             message: "退出成功"
+  //           });
+  //         } else {
+  //           _self.$router.push("/login");
+  //           _self.$store.commit("SAVE_USERINFO", "");
+  //           _self.$store.commit("SAVE_ArrayList", "");
+  //           _self.$store.commit("SAVE_ShopName", "");
+  //           _self.$store.commit("SAVE_BillData", "");
+  //           _self.$store.commit("SAVE_AllPayment", "");
+  //           _self.$message({
+  //             type: "error",
+  //             message: "退出失败"
+  //           });
+  //         }
+  //       })
+  //       .catch(function(error) {
+  //         _self.$router.push("/login");
+  //         _self.$store.commit("SAVE_USERINFO", "");
+  //         _self.axios
+  //           .post(_self.ApiUrl + "/logout")
+  //           .then(response => {
+  //             if (response.data.code == "200") {
+  //               _self.$store.commit("SAVE_USERINFO", "");
+  //               _self.$store.commit("SAVE_ArrayList", "");
+  //               _self.$store.commit("SAVE_ShopName", "");
+  //               _self.$store.commit("SAVE_BillData", "");
+  //               _self.$store.commit("SAVE_AllPayment", "");
+  //               _self.$router.push("/login");
+  //             } else {
+  //               _self.$router.push("/login");
+  //               _self.$store.commit("SAVE_USERINFO", "");
+  //               _self.$store.commit("SAVE_ArrayList", "");
+  //               _self.$store.commit("SAVE_BillData", "");
+  //               _self.$store.commit("SAVE_ShopName", "");
+  //               _self.$store.commit("SAVE_AllPayment", "");
+  //             }
+  //           })
+  //           .catch(function(error) {
+  //             _self.$router.push("/login");
+  //             _self.$store.commit("SAVE_USERINFO", "");
+  //             _self.$store.commit("SAVE_ArrayList", "");
+  //             _self.$store.commit("SAVE_BillData", "");
+  //             _self.$store.commit("SAVE_ShopName", "");
+  //             _self.$store.commit("SAVE_AllPayment", "");
+  //           });
+  //         _self.$message.error("响应时间过长，请重试");
+  //       });
+  //   },
+  //   // logins() {
+  //   //   let _self = this;
+  //   //   console.log(_self.ArrayList);
+  //   //   if (
+  //   //     _self.$store.state.userinfo == "" ||
+  //   //     _self.$store.state.userinfo == undefined ||
+  //   //     _self.$store.state.userinfo == null
+  //   //   ) {
+  //   //     _self.$router.push("/login");
+  //   //     _self.axios
+  //   //       .post(_self.ApiUrl + "/logout")
+  //   //       .then(response => {
+  //   //         if (response.data.code == "200") {
+  //   //           _self.$store.commit("SAVE_USERINFO", "");
+  //   //           _self.$store.commit("SAVE_ArrayList", "");
+  //   //           _self.$store.commit("SAVE_ShopName", "");
+  //   //           _self.$router.push("/login");
+  //   //         } else {
+  //   //           _self.$router.push("/login");
+  //   //           _self.$store.commit("SAVE_USERINFO", "");
+  //   //           _self.$store.commit("SAVE_ArrayList", "");
+  //   //           _self.$store.commit("SAVE_ShopName", "");
+  //   //         }
+  //   //       })
+  //   //       .catch(function(error) {
+  //   //         _self.$router.push("/login");
+  //   //         _self.$store.commit("SAVE_USERINFO", "");
+  //   //         _self.$store.commit("SAVE_ArrayList", "");
+  //   //         _self.$store.commit("SAVE_ShopName", "");
+  //   //       });
+  //   //   }
+  //   // },
+  //   // 隐藏开关
+  //   // hidechange() {
+  //   //   let _self = this;
+  //   //   _self.isShows = !_self.isShows;
+  //   // }
+  // },
+  // async mounted() {
+  //   this.logins();
+  //   await this.gettodaylist();
+  // }
 };
 </script>
 
