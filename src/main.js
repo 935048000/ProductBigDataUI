@@ -89,7 +89,8 @@ const realmphp = 'https://dolphin.daisha.com.cn/weixinbydc/' //支付
 // //const ApiUrls = 'http://localhost:8082';
 
 //大数据
-const ApiUrlData = 'http://121.43.162.222:8081';
+// const ApiUrlData = 'http://49.235.241.182:8080';
+const ApiUrlData = 'http://127.0.0.1:8089';
 //会员
 // //const ApiUrlMember = 'https://member.daisha.com.cn';//正式
 // const ApiUrlMember = 'http://115.29.228.150:8626';//测试

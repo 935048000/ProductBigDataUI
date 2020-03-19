@@ -178,7 +178,7 @@ export default {
         formData1.append("startTime", _self.value1[0]);
         formData1.append("endTime", _self.value1[1]);
       }
-
+      console.log(formData1);
       _self.axios
         .post(_self.ApiUrl + "/home/DataReportM", formData1)
         .then(response => {
