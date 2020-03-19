@@ -14,7 +14,7 @@
       <el-button type="success" class="daochu" @click="exportExcel">导出</el-button>
     </div>
 
-
+    // 先展示表格设置，tableData是需要填入的数据
     <div id="tableid">
       <el-table :data="tableData" border style="width: 100%" :height="tableHeight">
         <el-table-column prop="avg_price" label="平均价格"></el-table-column>
@@ -48,10 +48,12 @@ export default {
       let _self = this;
       console.log(_self.value1);
       let formData1 = new FormData();
+        // 传的参数
         formData1.append("startDate", _self.value1[0]);
         formData1.append("stopDate", _self.value1[1]);
       // console.log(formData1);
       _self.axios
+        // 请求接口
         .post(_self.ApiUrlData + "/price/dayAvgPrice", formData1)
         .then(response => {
           if (response.data.errcode == "0") {

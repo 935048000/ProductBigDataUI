@@ -24,378 +24,15 @@
             </div>
             <i class="el-icon-setting"></i>
           </el-menu-item>
-          <!-- 餐饮 -->
-          <!--<div v-bind:style="{ display: canyin=='block'?canyin:examinAdmin }">-->
-            <!--<div v-if="techan !== 'block'">-->
-              <!--<el-submenu index="2" v-bind:style="{ display: display4 }">-->
-                <!--<template slot="title">-->
-                  <!--<i class="el-icon-tableware"></i>-->
-                  <!--{{NamingMethod}}-->
-                <!--</template>-->
-                <!--<el-menu-item-group>-->
-                  <!--<el-menu-item index="business">{{NamingMethodChild}}</el-menu-item>-->
-                <!--</el-menu-item-group>-->
-              <!--</el-submenu>-->
-              <!--<el-submenu index="19" v-bind:style="{ display:CashRegister }">-->
-                <!--<template slot="title">-->
-                  <!--<i class="el-icon-tableware"></i>商家端收银系统-->
-                <!--</template>-->
-                <!--<el-menu-item-group>-->
-                  <!--<el-menu-item index="cashiers">商家收银</el-menu-item>-->
-                <!--</el-menu-item-group>-->
-              <!--</el-submenu>-->
-              <!--&lt;!&ndash;<el-submenu index="1" v-bind:style="{ display: display3 }">&ndash;&gt;-->
-                <!--&lt;!&ndash;<template slot="title">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<i class="el-icon-tickets"></i>订单管理&ndash;&gt;-->
-                <!--&lt;!&ndash;</template>&ndash;&gt;-->
-                <!--&lt;!&ndash;<el-menu-item-group>&ndash;&gt;-->
-                  <!--&lt;!&ndash;<el-menu-item index="todaylist" @click="todaylist">&ndash;&gt;-->
-                    <!--&lt;!&ndash;今日订单&ndash;&gt;-->
-                    <!--&lt;!&ndash;<div class="slow">&ndash;&gt;-->
-                      <!--&lt;!&ndash;<span>{{count}}</span>&ndash;&gt;-->
-                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</el-menu-item>&ndash;&gt;-->
-                  <!--&lt;!&ndash;<el-menu-item-group>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<el-menu-item index="Takeawaytoday">外卖订单</el-menu-item>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</el-menu-item-group>&ndash;&gt;-->
-                  <!--&lt;!&ndash;<el-menu-item-group>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<el-menu-item index="takeOutList" >外卖全部订单</el-menu-item>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</el-menu-item-group>&ndash;&gt;-->
-                  <!--&lt;!&ndash;<el-menu-item index="todaycredit" v-if="profilesettlement=='POST-PAY'">赊账订单</el-menu-item>&ndash;&gt;-->
-                  <!--&lt;!&ndash;<el-menu-item index="unpaid" v-bind:style="{ display: unpaiddisplay }">未支付订单</el-menu-item>&ndash;&gt;-->
-                  <!--&lt;!&ndash;<el-menu-item index="alllist" v-bind:style="{ display: REPORT }">全部订单</el-menu-item>&ndash;&gt;-->
-                  <!--&lt;!&ndash;<el-menu-item&ndash;&gt;-->
-                    <!--&lt;!&ndash;index="collect"&ndash;&gt;-->
-                    <!--&lt;!&ndash;v-bind:style="{ display: REPORT=='block'?REPORT:examinOnly }"&ndash;&gt;-->
-                  <!--&lt;!&ndash;&gt;订单汇总</el-menu-item>&ndash;&gt;-->
-                <!--&lt;!&ndash;</el-menu-item-group>&ndash;&gt;-->
-              <!--&lt;!&ndash;</el-submenu>&ndash;&gt;-->
-              <!--&lt;!&ndash;<div v-bind:style="{ display: unpaiddisplay }">&ndash;&gt;-->
-                <!--&lt;!&ndash;<el-submenu index="3" v-bind:style="{ display: display1 }">&ndash;&gt;-->
-                  <!--&lt;!&ndash;<template slot="title">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<i class="el-icon-menu"></i>商品管理&ndash;&gt;-->
-                  <!--&lt;!&ndash;</template>&ndash;&gt;-->
-                  <!--&lt;!&ndash;<el-menu-item-group>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<el-menu-item index="commodity">商品信息</el-menu-item>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</el-menu-item-group>&ndash;&gt;-->
-                  <!--&lt;!&ndash;<el-menu-item-group>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<el-menu-item index="categoryup">品类信息</el-menu-item>&ndash;&gt;-->
-                  <!--&lt;!&ndash;</el-menu-item-group>&ndash;&gt;-->
-                  <!--&lt;!&ndash;<el-menu-item-group>&ndash;&gt;-->
-                    <!--&lt;!&ndash;&lt;!&ndash;<el-menu-item index="category" v-bind:style="{ display: display5 }">商品品类</el-menu-item>&ndash;&gt;&ndash;&gt;-->
-                  <!--&lt;!&ndash;</el-menu-item-group>&ndash;&gt;-->
-                <!--&lt;!&ndash;</el-submenu>&ndash;&gt;-->
-              <!--&lt;!&ndash;</div>&ndash;&gt;-->
-              <!--<div v-if="shopcode=='R_SAMCT'">-->
-                <!--<el-submenu index="25">-->
-                  <!--<template slot="title">-->
-                    <!--<i class="el-icon-s-cooperation"></i>积分充值-->
-                  <!--</template>-->
-                  <!--<el-menu-item-group>-->
-                    <!--<el-menu-item index="MembershipRecharge2">积分信息</el-menu-item>-->
-                  <!--</el-menu-item-group>-->
-                  <!--<el-menu-item-group>-->
-                    <!--<el-menu-item index="MembershipInformation2">会员信息</el-menu-item>-->
-                  <!--</el-menu-item-group>-->
-                <!--</el-submenu>-->
-              <!--</div>-->
-            <!--</div>-->
-            <!--<el-submenu index="4" v-show="examin == 'block' || examinAdmin == 'block' ">-->
-              <!--<template slot="title">-->
-                <!--<i class="el-icon-notebook-1"></i>财务报表汇总-->
-              <!--</template>-->
-              <!--<el-menu-item index="nav" v-if="examinAdmin !== 'block'">报表导航页</el-menu-item>-->
-              <!--&lt;!&ndash;<el-menu-item-group v-if="examinAdmin !== 'block'">&ndash;&gt;-->
-                <!--&lt;!&ndash;<el-menu-item index="storesummary">店铺汇总</el-menu-item>&ndash;&gt;-->
-              <!--&lt;!&ndash;</el-menu-item-group>&ndash;&gt;-->
-              <!--&lt;!&ndash;<el-menu-item-group v-if="examinAdmin !== 'block'">&ndash;&gt;-->
-                <!--&lt;!&ndash;<el-menu-item index="StoreBillDetailTabulation">餐饮账单明细表</el-menu-item>&ndash;&gt;-->
-              <!--&lt;!&ndash;</el-menu-item-group>&ndash;&gt;-->
-              <!--&lt;!&ndash;<el-menu-item-group v-if="examinAdmin !== 'block'">&ndash;&gt;-->
-                <!--&lt;!&ndash;<el-menu-item index="BillDetailTabulationRetail_v2">零售账单明细表</el-menu-item>&ndash;&gt;-->
-              <!--&lt;!&ndash;</el-menu-item-group>&ndash;&gt;-->
-              <!--&lt;!&ndash;<el-menu-item-group v-if="examinAdmin !== 'block'">&ndash;&gt;-->
-                <!--&lt;!&ndash;<el-menu-item index="financialSummaryDay">财务日汇总报表</el-menu-item>&ndash;&gt;-->
-              <!--&lt;!&ndash;</el-menu-item-group>&ndash;&gt;-->
-              <!--&lt;!&ndash;<el-menu-item-group v-if="examinAdmin !== 'block'">&ndash;&gt;-->
-                <!--&lt;!&ndash;<el-menu-item index="profitStatement ">零售毛利查询</el-menu-item>&ndash;&gt;-->
-              <!--&lt;!&ndash;</el-menu-item-group>&ndash;&gt;-->
-              <!--&lt;!&ndash;<el-menu-item-group v-if="examinAdmin !== 'block'">&ndash;&gt;-->
-                <!--&lt;!&ndash;<el-menu-item index="SupplierSalesStatement">供应商销售日汇总报表</el-menu-item>&ndash;&gt;-->
-              <!--&lt;!&ndash;</el-menu-item-group>&ndash;&gt;-->
-              <!--&lt;!&ndash;<el-menu-item-group v-if="examinAdmin !== 'block'">&ndash;&gt;-->
-                <!--&lt;!&ndash;<el-menu-item index="SupplierSalesStatement_3">供应商销售汇总报表</el-menu-item>&ndash;&gt;-->
-              <!--&lt;!&ndash;</el-menu-item-group>&ndash;&gt;-->
-              <!--&lt;!&ndash;<el-menu-item-group v-if="examinAdmin !== 'block'">&ndash;&gt;-->
-                <!--&lt;!&ndash;<el-menu-item index="ProviderShopSalesList">供应商门店销售明细</el-menu-item>&ndash;&gt;-->
-              <!--&lt;!&ndash;</el-menu-item-group>&ndash;&gt;-->
-              <!--&lt;!&ndash;<el-menu-item-group v-if="examinAdmin !== 'block'">&ndash;&gt;-->
-                <!--&lt;!&ndash;<el-menu-item index="shopAreaReportD">门店销售日报表(区域汇总)</el-menu-item>&ndash;&gt;-->
-              <!--&lt;!&ndash;</el-menu-item-group>&ndash;&gt;-->
-              <!--&lt;!&ndash;<el-menu-item-group v-if="examinAdmin !== 'block'">&ndash;&gt;-->
-                <!--&lt;!&ndash;<el-menu-item index="ShopAreaReportM">门店销售月报表(区域汇总)</el-menu-item>&ndash;&gt;-->
-              <!--&lt;!&ndash;</el-menu-item-group>&ndash;&gt;-->
-              <!--&lt;!&ndash;<el-menu-item-group v-if="examinAdmin !== 'block'">&ndash;&gt;-->
-                <!--&lt;!&ndash;<el-menu-item index="RetailSaleSummary">零售销售汇总报表</el-menu-item>&ndash;&gt;-->
-              <!--&lt;!&ndash;</el-menu-item-group>&ndash;&gt;-->
-
-              <!--&lt;!&ndash;<el-menu-item-group v-if="examinAdmin !== 'block'">&ndash;&gt;-->
-                <!--&lt;!&ndash;<el-menu-item index="warehousequery">仓库查询报表</el-menu-item>&ndash;&gt;-->
-              <!--&lt;!&ndash;</el-menu-item-group>&ndash;&gt;-->
-              <!--&lt;!&ndash;<el-menu-item-group v-if="examinAdmin !== 'block'">&ndash;&gt;-->
-                <!--&lt;!&ndash;<el-menu-item index="InventoryStatement_v2">供应商结算报表</el-menu-item>&ndash;&gt;-->
-              <!--&lt;!&ndash;</el-menu-item-group>&ndash;&gt;-->
-              <!--&lt;!&ndash;<el-menu-item-group v-if="examinAdmin !== 'block'">&ndash;&gt;-->
-                <!--&lt;!&ndash;<el-menu-item index="StockSellStorage">进销存汇总报表</el-menu-item>&ndash;&gt;-->
-              <!--&lt;!&ndash;</el-menu-item-group>&ndash;&gt;-->
-              <!--<el-menu-item-group>-->
-                <!--<el-menu-item index="shopdailyreport">门店销售日报表</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-              <!--&lt;!&ndash;<el-menu-item-group v-if="examinAdmin !== 'block'">&ndash;&gt;-->
-                <!--&lt;!&ndash;<el-menu-item index="stonehourlyreport">易石历史数据时汇总</el-menu-item>&ndash;&gt;-->
-              <!--&lt;!&ndash;</el-menu-item-group>&ndash;&gt;-->
-              <!--&lt;!&ndash;<el-menu-item-group v-if="examinAdmin !== 'block'">&ndash;&gt;-->
-                <!--&lt;!&ndash;<el-menu-item index="stonedailyreport">易石历史数据日汇总</el-menu-item>&ndash;&gt;-->
-              <!--&lt;!&ndash;</el-menu-item-group>&ndash;&gt;-->
-              <!--&lt;!&ndash;<el-menu-item-group v-if="examinAdmin !== 'block'">&ndash;&gt;-->
-                <!--&lt;!&ndash;<el-menu-item index="stonemonthreport">易石历史数据月汇总</el-menu-item>&ndash;&gt;-->
-              <!--&lt;!&ndash;</el-menu-item-group>&ndash;&gt;-->
-              <!--&lt;!&ndash;<el-menu-item-group v-if="examinAdmin !== 'block'">&ndash;&gt;-->
-                <!--&lt;!&ndash;<el-menu-item index="yestodayRefund">隔日退款</el-menu-item>&ndash;&gt;-->
-              <!--&lt;!&ndash;</el-menu-item-group>&ndash;&gt;-->
-            <!--</el-submenu>-->
-            <!--&lt;!&ndash;<div v-if="techan !== 'block'">&ndash;&gt;-->
-              <!--&lt;!&ndash;<el-submenu index="5" v-bind:style="{ display: display6 }">&ndash;&gt;-->
-                <!--<template slot="title">-->
-                  <!--<i class="el-icon-s-shop"></i>店铺管理-->
-                <!--</template>-->
-                <!--<el-menu-item-group>-->
-                  <!--<el-menu-item index="StoreManagement">店铺信息</el-menu-item>-->
-                <!--</el-menu-item-group>-->
-              <!--&lt;!&ndash;</el-submenu>&ndash;&gt;-->
-              <!--<el-submenu index="6" v-bind:style="{ display: display7 }">-->
-                <!--<template slot="title">-->
-                  <!--<i class="el-icon-dessert"></i>椰语堂汇总-->
-                <!--</template>-->
-                <!--<el-menu-item-group>-->
-                  <!--<el-menu-item index="yytgather">汇总信息</el-menu-item>-->
-                <!--</el-menu-item-group>-->
-              <!--</el-submenu>-->
-            <!--&lt;!&ndash;</div>&ndash;&gt;-->
-          <!--</div>-->
-          <!-- 特产 -->
-          <!--<div v-bind:style="{ display: techan }">-->
-            <!--<el-submenu index="8" v-bind:style="{ display: display9 }">-->
-              <!--<template slot="title">-->
-                <!--<i class="el-icon-orange"></i>零售供应链系统-->
-              <!--</template>-->
-              <!--<el-menu-item-group>-->
-                <!--<el-menu-item index="Retailordering">销售页面</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-              <!--<el-menu-item-group>-->
-                <!--<el-menu-item index="retailtodaylist">今日订单</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-
-              <!--<el-menu-item-group>-->
-                <!--<el-menu-item index="OrderImport">订单导入</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-              <!--<el-menu-item-group>-->
-                <!--<el-menu-item index="retailalllist" v-bind:style="{ display: REPORT }">全部订单</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-
-              <!--<el-menu-item-group>-->
-                <!--<el-menu-item index="retailunpaid">未支付订单</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-              <!--<el-menu-item-group>-->
-                <!--&lt;!&ndash;<el-menu-item&ndash;&gt;-->
-                  <!--&lt;!&ndash;index="retailcollect"&ndash;&gt;-->
-                  <!--&lt;!&ndash;v-bind:style="{ display: REPORT=='block'?REPORT:examinOnly }"&ndash;&gt;-->
-                <!--&lt;!&ndash;&gt;订单汇总</el-menu-item>&ndash;&gt;-->
-              <!--</el-menu-item-group>-->
-            <!--</el-submenu>-->
-            <!--<el-submenu index="9" v-bind:style="{ display: display10 }">-->
-              <!--<template slot="title">-->
-                <!--<i class="el-icon-menu"></i>商品管理-->
-              <!--</template>-->
-              <!--<el-menu-item-group>-->
-                <!--<el-menu-item index="retailcommodity">商品信息</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-              <!--<el-menu-item-group v-bind:style="{ display: Supplychain }">-->
-                <!--<el-menu-item index="ProductList">新增商品</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-            <!--</el-submenu>-->
-          <!--</div>-->
-          <!-- 商品审核 -->
-          <!--<div v-bind:style="{ display: examin }">-->
-            <!--<el-submenu index="15">-->
-              <!--<template slot="title">-->
-                <!--<i class="el-icon-c-scale-to-original"></i>财务审核-->
-              <!--</template>-->
-              <!--<el-menu-item-group>-->
-                <!--<el-menu-item index="CommodityAudit">商品审核</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-              <!--<el-menu-item-group>-->
-                <!--<el-menu-item index="DetailedExaminationofCommodities">商品已审核明细</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-              <!--<el-menu-item-group>-->
-                <!--<el-menu-item index="LibraryAudit">库单审核</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-              <!--<el-menu-item-group>-->
-                <!--<el-menu-item index="Detailaudited">库单已审核明细</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-              <!--<el-menu-item-group>-->
-                <!--<el-menu-item index="Errorlibrarylist">库单不通过详情列表</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-              <!--<el-menu-item-group>-->
-                <!--<el-menu-item index="AuditofPropertyData">机场数据审核</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-            <!--</el-submenu>-->
-            <!--<el-submenu index="18" v-bind:style="{ display: Financialdisplay }">-->
-              <!--<template slot="title">-->
-                <!--<i class="el-icon-menu"></i>商品管理-->
-              <!--</template>-->
-              <!--<el-menu-item-group>-->
-                <!--<el-menu-item index="FinancialCommodityAudit">商品信息</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-            <!--</el-submenu>-->
-          <!--</div>-->
-          <!--<el-submenu index="17" v-bind:style="{ display: MembershipAuthority }">-->
-            <!--<template slot="title">-->
-              <!--<i class="el-icon-s-opportunity"></i>会员管理-->
-            <!--</template>-->
-            <!--<el-menu-item-group>-->
-              <!--<el-menu-item index="MembershipRecharge">会员充值</el-menu-item>-->
-            <!--</el-menu-item-group>-->
-            <!--<el-menu-item-group>-->
-              <!--<el-menu-item index="MembershipInformation">会员信息</el-menu-item>-->
-            <!--</el-menu-item-group>&ndash;&gt;-->
-            <!-- <el-menu-item-group>
-              <el-menu-item index="RechargeSummary">会员累计充值汇总表</el-menu-item>
-            </el-menu-item-group>-->
-          <!--</el-submenu>-->
-          <!-- 供应链 -->
-          <!--<div v-bind:style="{ display: Supplychain }">-->
-            <!--<el-submenu index="16">-->
-              <!--<template slot="title">-->
-                <!--<i class="el-icon-receiving"></i>供应商管理-->
-              <!--</template>-->
-              <!--<el-menu-item-group>-->
-                <!--<el-menu-item index="supplychain">供应商明细</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-            <!--</el-submenu>-->
-          <!--</div>-->
-          <!-- 仓库 -->
-          <!--<div v-bind:style="{ display:AuditDetails }">-->
-            <!--<el-submenu index="14">-->
-              <!--<template slot="title">-->
-                <!--<i class="el-icon-s-claim"></i>仓库审核-->
-              <!--</template>-->
-              <!--&lt;!&ndash; <el-menu-item-group>-->
-								<!--<el-menu-item index="increased">新增商品</el-menu-item>-->
-              <!--</el-menu-item-group>&ndash;&gt;-->
-              <!--<el-menu-item-group>-->
-                <!--<el-menu-item index="auditdetails">审核明细</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-              <!--<el-menu-item-group>-->
-                <!--<el-menu-item index="AuditofPurchaseOrder">申购单审核</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-            <!--</el-submenu>-->
-          <!--</div>-->
-          <!--<div v-bind:style="{ display: warehouse }">-->
-            <!--<el-submenu index="10">-->
-              <!--<template slot="title">-->
-                <!--<i class="el-icon-box"></i>仓库管理-->
-              <!--</template>-->
-              <!--&lt;!&ndash; <el-menu-item-group>-->
-								<!--<el-menu-item index="increased">新增商品</el-menu-item>-->
-              <!--</el-menu-item-group>&ndash;&gt;-->
-              <!--&lt;!&ndash;<el-menu-item-group v-bind:style="{ display:stockcontrol }">&ndash;&gt;-->
-                <!--<el-menu-item index="stock">库存管理</el-menu-item>-->
-              <!--&lt;!&ndash;</el-menu-item-group>&ndash;&gt;-->
-
-              <!--<el-menu-item-group>-->
-                <!--<el-menu-item index="repertory">库存明细</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-              <!--&lt;!&ndash; <el-menu-item-group v-bind:style="{ display:AuditDetails }">-->
-								<!--<el-menu-item index="auditdetails">审核明细</el-menu-item>-->
-              <!--</el-menu-item-group>&ndash;&gt;-->
-              <!--<el-menu-item-group>-->
-                <!--<el-menu-item index="cancel">作废明细</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-              <!--<el-menu-item-group>-->
-                <!--<el-menu-item index="theoreticalinventory">理论库存</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-
-              <!--<el-menu-item-group>-->
-                <!--<el-menu-item index="AuditDetailaudited">库单已审核明细</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-              <!--<el-menu-item-group>-->
-                <!--<el-menu-item index="AuditErrorlibrarylist">库单不通过详情列表</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-            <!--</el-submenu>-->
-            <!--<el-submenu index="11">-->
-              <!--<template slot="title">-->
-                <!--<i class="el-icon-s-finance"></i>盘点管理-->
-              <!--</template>-->
-              <!--<el-menu-item-group>-->
-                <!--<el-menu-item index="effectivepair">盘点校对</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-              <!--<el-menu-item-group>-->
-                <!--<el-menu-item index="inventoryDerivation">盘点导出</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-              <!--<el-menu-item-group>-->
-                <!--<el-menu-item index="InventoryConsolidation">盘点合并</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-            <!--</el-submenu>-->
-            <!--<el-submenu index="12">-->
-              <!--<template slot="title">-->
-                <!--<i class="el-icon-document-copy"></i>调拨管理-->
-              <!--</template>-->
-              <!--<el-menu-item-group>-->
-                <!--<el-menu-item index="inventoryallocation">库存调拨</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-              <!--<el-menu-item-group>-->
-                <!--<el-menu-item index="purchaserequisition">申购单</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-            <!--</el-submenu>-->
-          <!--</div>-->
-          <!-- 店长权限 -->
-          <!--<div v-bind:style="{ display: displayquan && REPORT }">-->
             <el-submenu index="7">
               <template slot="title">
                 <i class="el-icon-notebook-2"></i>报表中心
               </template>
               <!--<el-menu-item index="nav">报表导航页</el-menu-item>-->
-              <el-submenu index="7-1">
-                <template slot="title">汇总类报表</template>
-                <!--<el-menu-item-group>-->
-                  <!--<el-menu-item index="Categorysummary">品类汇总</el-menu-item>-->
-                <!--</el-menu-item-group>-->
-                <!--&lt;!&ndash;<div v-bind:style="{ display: canyinTabulation }">&ndash;&gt;-->
-                  <!--<el-menu-item-group>-->
-                    <!--<el-menu-item index="Salesvolumesummary">餐饮单品销量汇总</el-menu-item>-->
-                  <!--</el-menu-item-group>-->
-                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                <!--&lt;!&ndash;<div v-bind:style="{ display: lingshouTabulation }">&ndash;&gt;-->
-                  <!--<el-menu-item-group>-->
-                    <!--<el-menu-item index="SalesvolumesummaryRetail">零售单品销量汇总</el-menu-item>-->
-                  <!--</el-menu-item-group>-->
-                <!--</div>-->
-                <!--<el-menu-item-group>-->
-                  <!--<el-menu-item index="comprehensive">综合汇总</el-menu-item>-->
-                <!--</el-menu-item-group>-->
-                <!--<el-menu-item-group>-->
-                  <!--<el-menu-item index="ReportFormsLinkFelativeMonth">月环比报表</el-menu-item>-->
-                <!--</el-menu-item-group>-->
-                <!--<el-menu-item-group>-->
-                  <!--<el-menu-item index="ReportFormsLinkFelativeWeek">周环比报表</el-menu-item>-->
-                <!--</el-menu-item-group>-->
-                <!--<el-menu-item-group>-->
-                  <!--<el-menu-item index="intervalDataComparisonReportD">日环比报表</el-menu-item>-->
-                <!--</el-menu-item-group>-->
-
+              <!--<el-submenu index="7-1">-->
+                <!--<template slot="title">汇总类报表</template>-->
                 <el-menu-item-group>
-                  <el-menu-item index="DataReportDay">日汇总报表</el-menu-item>
+                  <el-menu-item index="DataReportDay">产品日均价（模板）</el-menu-item>
                 </el-menu-item-group>
                 <el-menu-item-group>
                   <el-menu-item index="DataReportM">月汇总报表</el-menu-item>
@@ -409,19 +46,14 @@
                 <el-menu-item-group>
                   <el-menu-item index="shopstonemonthreport">易石历史数据月汇总</el-menu-item>
                 </el-menu-item-group>
-              </el-submenu>
+              <!--</el-submenu>-->
 
-              <!--零售类-->
-              <!--<div v-bind:style="{ display: lingshouTabulation }">-->
-                <el-submenu index="7-2">
-                  <template slot="title">零售类报表</template>
+
+                <!--<el-submenu index="7-2">-->
+                  <!--<template slot="title">零售类报表</template>-->
                   <el-menu-item-group>
                     <el-menu-item index="theoreticalinventory_v2">库存明细报表</el-menu-item>
-                  <!--</el-menu-item-group>-->
-                  <!--&lt;!&ndash;<el-menu-item-group v-bind:style="{ display: lingshouTabulation }">&ndash;&gt;-->
-                    <!--<el-menu-item index="BillDetailTabulationRetail">零售账单明细表</el-menu-item>-->
-                  <!--&lt;!&ndash;</el-menu-item-group>&ndash;&gt;-->
-                  <!--<el-menu-item-group>-->
+
                     <el-menu-item index="salesPerformance">销售业绩报表</el-menu-item>
                   </el-menu-item-group>
                   <el-menu-item-group>
@@ -432,25 +64,9 @@
                     <el-menu-item index="InventoryStatement">库单报表</el-menu-item>
                   </el-menu-item-group>
                 </el-submenu>
-              <!--</div>-->
 
-              <!--<el-menu-item-group v-bind:style="{ display: canyinTabulation }">-->
-                <!--<el-menu-item index="BillDetailTabulation">餐饮账单明细表</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-
-              <!--<el-menu-item-group>-->
-                <!--<el-menu-item index="OrderCouponDetail">订单优惠信息查询</el-menu-item>-->
-              <!--</el-menu-item-group>-->
-            </el-submenu>
-            <!--<el-submenu index="13" v-bind:style="{ display: unpaiddisplay }">-->
-              <!--<template slot="title">-->
-                <!--<i class="el-icon-turn-off"></i>权限管理-->
-              <!--</template>-->
-              <!--<el-menu-item-group>-->
-                <!--<el-menu-item index="promotion">门店权限设置</el-menu-item>-->
-              <!--</el-menu-item-group>-->
             <!--</el-submenu>-->
-          <!--</div>-->
+
         </el-menu>
       </el-aside>
       <!--右侧-->
@@ -458,21 +74,7 @@
         <el-header
           style="text-align: right; font-size: 12px;background-color: rgb(51, 51, 51);position: relative;"
         >
-          <!--<i-->
-            <!--class="el-icon-s-fold username leftclose"-->
-            <!--style="margin-right: 15px"-->
-            <!--@click="hidechange"-->
-          <!--&gt;</i>-->
-          <!--<span class="username" @click="layout">{{username}} 退出</span>-->
-          <!--<i class="el-icon-caret-bottom username" style="margin-right: 15px"></i>-->
-          <!-- <el-dropdown>
-						<span class="username" @click="layout">{{username}} 退出</span>
-						<i class="el-icon-caret-bottom username" style="margin-right: 15px"></i>
-						<el-dropdown-menu slot="dropdown" style='top: 2.5rem;'>
-							<el-dropdown-item></el-dropdown-item>
-							<el-dropdown-item style='padding: 0;'><span @click="layout" style="display: inline-block;padding: 0 1.25rem;">退出登录</span></el-dropdown-item>
-						</el-dropdown-menu>
-          </el-dropdown>-->
+
         </el-header>
 
         <!--路由出口-->
