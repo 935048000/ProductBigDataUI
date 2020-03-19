@@ -14,7 +14,7 @@
       <el-button type="success" class="daochu" @click="exportExcel">导出</el-button>
     </div>
 
-    // 先展示表格设置，tableData是需要填入的数据
+    <!--// 先展示表格设置，tableData是需要填入的数据-->
     <div id="tableid">
       <el-table :data="tableData" border style="width: 100%" :height="tableHeight">
         <el-table-column prop="avg_price" label="平均价格"></el-table-column>
